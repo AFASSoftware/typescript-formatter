@@ -107,7 +107,7 @@ export function processString(fileName: string, content: string, opts: Options):
             let formattedCode = formatter(fileName, content, formatOptions);
             if ((<any>formattedCode).trimRight) {
                 formattedCode = (<any>formattedCode).trimRight();
-                formattedCode += "\n";
+                formattedCode += formatOptions.NewLineCharacter;
             }
 
             postProcesses.forEach(postProcess => {
