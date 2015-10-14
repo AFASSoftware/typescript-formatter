@@ -1,6 +1,9 @@
 {
   "name": "typescript-formatter",
-  "version": "1.0.0",
+  "version": "1.0.3-afas",
+  "publishConfig": {
+    "registry": "http://npm.afasgroep.nl"
+  },
   "description": "Formatter of TypeScript code",
   "main": "./index",
   "bin": {
